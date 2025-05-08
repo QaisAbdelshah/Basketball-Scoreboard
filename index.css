@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'myFont';
+    src: url('fonts/CursedTimerUlil-Aznm.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'myFont2';
+    src: url('fonts/Mogra-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;   
+    background-image: url('images/basketball-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#section {
+    text-align: center;
+}
+
+#title {
+    color: black;
+    margin: 0;
+    text-shadow: none;
+    font-family: 'myfont2';
+    font-size: 48px;
+    text-shadow:
+        -2px -2px 0 white,
+         2px -2px 0 white,
+        -2px  2px 0 white,
+         2px  2px 0 white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #232323;
+    max-width: 575px;
+    max-width: 500px;
+    padding: 30px;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+    font-family: 'myfont2';
+    margin: 10%;
+}
+
+h2 {
+    color: red;
+    background-color: black;
+    font-size: 50px;
+    font-family: 'myFont';
+    text-align: center;
+    padding: 15px 0px;
+    border-radius: 5px;
+    border: 5px solid black;
+    margin: 10%;
+}
+
+.homePoints button {
+    color: white;
+    font-family: 'myFont';
+    font-size: 15px;
+    background-color: black;
+    margin: 2px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.guestPoints button {
+    color: white;
+    font-family: 'myFont';
+    font-size: 15px;
+    background-color: black;
+    margin: 2px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #232323;
+    cursor: pointer;
+}
+
+#game-buttons {
+    margin-top: 30px;
+}
+
+.game-button {
+    color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 30px;
+    font-family: 'myfont2';
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+#reset {
+    background-color: #dc3545;
+}
+
+#stop {
+    background-color: #ffc107;
+}
+
+#start {
+    background-color: #28a745;
+}
+
+.game-button:hover {
+    color: rgb(211, 211, 211);
+    opacity: 0.9;
+}
+
+#timer {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-family: 'myfont';
+    color: red;
+}
+
+#quarter {
+    font-family: 'myfont2';
+    color: white;
+    margin: 0;
+}
+
+#quarter-round {
+    font-family: 'myfont';
+    font-size: 30px;
+    color: red;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+#quarter-round-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quarter-add {
+    height: 10%;
+    font-size: 20px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+    font-family: 'myfont';
+    border-radius: 5px;
+}
+
+#quarter-minus {
+    height: 10%;
+    font-size: 20px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+    font-family: 'myfont';
+    border-radius: 5px;
+}
+
+#foul-point-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#foul-title {
+    color: white;
+    font-family: 'myfont2';
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#foul-point-container p {
+    font-family: 'myfont';
+    font-size: 20px;
+    color: blue;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+#foul-point-container button {
+    height: 10%;
+    font-size: 20px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+    font-family: 'myfont';
+    border-radius: 5px;
+}
+
+#newGame {
+    color: black;
+    background-color: purple;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 40px;
+    font-family: 'myfont2';
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    margin-top: 20px;
+}
+
+#newGame:hover {
+    color: rgb(211, 211, 211);
+    opacity: 0.9;
+}

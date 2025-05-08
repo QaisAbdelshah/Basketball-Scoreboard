@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Basketball Scoreboard</title>
+</head>
+
+<body>
+    <div id="section">
+        <h1 id="title">Basketball Scoreboard</h1>
+        <div class="container">
+            <div>
+                <h1>HOME</h1>
+                <h2 id="homePoints">0</h2>
+                <div class="homePoints">
+                    <button onclick="onePointHome()">+1</button>
+                    <button onclick="twoPointHome()">+2</button>
+                    <button onclick="threePointHome()">+3</button>
+                </div>
+                <p id="foul-title">FOUL</p>
+                <div id="foul-point-container">
+                    <button id="minusFoul" onclick="homeInvalidFoul()">-</button>
+                    <p id="homeFoulPoints">0</p>
+                    <button id="addFoul" onclick="homeValidFoul()">+</button>
+                </div>
+            </div>
+            <div>
+                <p class="time" id="timer">
+                    <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="tens">00</span>
+                </p>
+                <p id="quarter">QUARTER</p>
+                <div id="quarter-round-container">
+                    <button id="quarter-add" onclick="minusQuarter()">-</button>
+                    <p id="quarter-round">0</p>
+                    <button id="quarter-minus" onclick="addQuarter()">+</button>
+                </div>
+            </div>
+
+            <div>
+                <h1>GUEST</h1>
+                <h2 id="guestPoints">0</h2>
+                <div class="guestPoints">
+                    <button onclick="onePointGuest()">+1</button>
+                    <button onclick="twoPointGuest()">+2</button>
+                    <button onclick="threePointGuest()">+3</button>
+                </div>
+                <p id="foul-title">FOUL</p>
+                <div id="foul-point-container">
+                    <button id="minusFoul" onclick="guestInvalidFoul()">-</button>
+                    <p id="guestFoulPoints">0</p>
+                    <button id="addFoul" onclick="guestValidFoul()">+</button>
+                </div>
+            </div>
+        </div>
+        <div id="game-buttons">
+            <button id="reset" class="game-button">RESET</button>
+            <button id="stop" class="game-button">STOP</button>
+            <button id="start" class="game-button">START</button>
+        </div>
+        <button id="newGame" onclick="resetGame()">NEW GAME</button>
+    </div>
+    <script src="index.js"></script>
+    <script src="timer.js"></script>
+</body>
+
+</html>
