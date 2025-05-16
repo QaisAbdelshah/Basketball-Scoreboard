@@ -12,4 +12,4 @@ The Basketball Scoreboard is a sleek and interactive digital scoreboard designed
 	•	Frontend: HTML, CSS, JavaScript
 	•	UI Style: Bright and game-themed with clear readability
 	•	Responsive Design: Works well on various screen sizes
-
+ <img width="1710" alt="Screenshot 2025-05-16 at 14 23 43" src="https://github.com/user-attachments/assets/ba5b6be8-0637-42ec-8550-c78641ec9751" />
